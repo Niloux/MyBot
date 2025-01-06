@@ -23,7 +23,8 @@
 
 ```bash
 pip install aiohttp websockets
+```
 
-## 查询天气实例
+## 查询天气示例
 
 /weather {地点}
