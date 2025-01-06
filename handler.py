@@ -30,9 +30,6 @@ class WebSocketHandler:
     async def handle_event(self, response: str):
         """处理接收到的消息，调用相应的事件处理函数以及执行定时任务"""
         try:
-            for t in self.schedule_handlers:
-                asyncio.create_task(t(self.client))
-
             data = json.loads(response)
             event_name = data.get("raw_message")
             # 对事件进行解析(很蠢的一刀切解析方式...但目前能用)
