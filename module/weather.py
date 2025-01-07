@@ -1,10 +1,7 @@
-import requests
 import logging
 import aiohttp
 from datetime import datetime, timedelta
 from urllib.parse import quote
-
-
 from module.message import send_message
 
 WEATHER_KEY = "d2781ca364e25b47435537dafa7817ed"

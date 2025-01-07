@@ -8,6 +8,7 @@ from typing import Callable, Dict
 from websocket import WebSocketClient
 from module.echo import echo
 from module.weather import forcast
+from module.what_to_eat import eat_help, what_to_eat, how_to_cook, what_we_have
 
 
 class WebSocketHandler:
@@ -18,6 +19,10 @@ class WebSocketHandler:
 
         self.register_event("/echo", echo)
         self.register_event("/weather", forcast)
+        self.register_event("/eat_help", eat_help)
+        self.register_event("/what_to_eat", what_to_eat)
+        self.register_event("/how_to_cook", how_to_cook)
+        self.register_event("/what_we_have", what_we_have)
 
     def register_event(self, event_name: str, handler: Callable):
         """注册事件处理函数"""
