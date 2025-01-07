@@ -1,12 +1,12 @@
 # WebSocket 客户端 - Napcat 消息平台适配器
 
-本项目实现了一个 WebSocket 客户端，通过与本地的 Napcat 消息平台服务连接，获取城市天气信息并将其推送到 Napcat 平台。客户端通过调用腾讯地图 API 获取城市的经纬度，并利用 OpenWeather API 获取天气信息。
+本项目实现了一个 WebSocket 客户端，通过与本地的 Napcat 消息平台服务连接，帮助自己以及qq群群友们获得一些生活上的小帮助。
 
 ## 功能
 
-- 获取指定城市的经纬度
 - 获取城市的天气信息（温度、湿度、风速等）
-- 通过 WebSocket 将天气信息推送至 Napcat 消息平台
+- 解决宇宙终极难题今天到底吃点啥，收录了https://cook.aiursoft.cn/的一些食谱
+- 通过 WebSocket 将信息推送至 Napcat 消息平台
 
 ## 环境要求
 
@@ -28,3 +28,9 @@ pip install aiohttp websockets
 ## 查询天气示例
 
 /weather {地点}
+
+## 今天吃点啥示例
+/eat_help
+/what_we_have {食物种类}
+/what_to_eat {食物种类}
+/how_to_cook {食物名称}
