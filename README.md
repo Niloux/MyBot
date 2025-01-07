@@ -31,6 +31,9 @@ pip install aiohttp websockets
 
 ## 今天吃点啥示例
 /eat_help
+
 /what_we_have {食物种类}
+
 /what_to_eat {食物种类}
+
 /how_to_cook {食物名称}
