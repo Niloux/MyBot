@@ -2,7 +2,6 @@
 
 import logging
 import json
-import asyncio
 from typing import Callable, Dict
 
 from websocket import WebSocketClient
