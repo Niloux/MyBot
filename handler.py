@@ -50,3 +50,5 @@ class WebSocketHandler:
             logging.error("Failed to parse response as JSON")
         except Exception as e:
             logging.error(f"Error handling event: {e}")
+
+# 测试一下
